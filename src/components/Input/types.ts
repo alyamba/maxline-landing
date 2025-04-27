@@ -7,8 +7,8 @@ export interface IInput {
   type: InputType;
   label: string;
   placeholder: string;
-  value: string;
-  onChange: (value: string) => void;
-  error?: string;
-  // isValid?: boolean;
+  maskConfig?: {
+    mask: string;
+    replacement?: { [key: string]: RegExp };
+  };
 }

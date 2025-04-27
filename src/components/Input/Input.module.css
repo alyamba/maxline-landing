@@ -21,6 +21,14 @@ a {
   border: 1px solid rgba(232, 234, 240, 1);
 }
 
+.inputContainerActive {
+  border: 1px solid var(--green-color);
+}
+
+.inputContainerError {
+  border: 1px solid var(--red-color);
+}
+
 .flagContainer {
   padding: 9px 13px;
   background: rgba(255, 255, 255, 1);
@@ -33,10 +41,15 @@ a {
 }
 
 .input {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
   background: none;
   border: none;
   padding: 11px 14px;
   width: 100%;
+  outline: none;
+  caret-color: var(--green-color);
 }
 
 .eyeIcon {

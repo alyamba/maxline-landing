@@ -32,6 +32,11 @@
   gap: 0.5rem;
 }
 
+.error {
+  text-align: center;
+  color: var(--red-color);
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     background: rgba(0, 0, 0, 0.7);
