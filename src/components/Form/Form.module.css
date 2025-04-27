@@ -1,0 +1,46 @@
+.container {
+  background-color: rgba(15, 2, 25);
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 36px 48px 48px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 1.375rem;
+  position: relative;
+  z-index: 4;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 25vw;
+    backdrop-filter: blur(15.8px);
+  }
+}

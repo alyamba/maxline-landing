@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.8125rem;
+  color: var(--light-violet-color);
+}
+
+a {
+  color: var(--light-violet-color);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(241, 243, 246, 1);
+  border-radius: 6px;
+  border: 1px solid rgba(232, 234, 240, 1);
+}
+
+.flagContainer {
+  padding: 9px 13px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+}
+
+.flagIcon {
+  height: 12px;
+  width: 18px;
+}
+
+.input {
+  background: none;
+  border: none;
+  padding: 11px 14px;
+  width: 100%;
+}
+
+.eyeIcon {
+  padding: 0px 10.5px;
+  width: 16.58px;
+}
+
+.error {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: var(--red-color);
+}

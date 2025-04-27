@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.app::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("./assets/background.png") center/cover no-repeat;
+  opacity: 0.48;
+  z-index: 0;
+}
+
+.logoContainer {
+  position: relative;
+  z-index: 2;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 174.55px;
+  height: 21.43px;
+}
+
+.olympusContainer {
+  height: 220px;
+}
+
+.olympus {
+  position: relative;
+  top: -4.75rem;
+  left: -12px;
+  z-index: 3;
+}
+
+.cube {
+  position: absolute;
+  z-index: 6;
+  right: -60px;
+  top: 27rem;
+  width: 132.77px;
+  height: 131.3px;
+  rotate: -5deg;
+}
+
+.hexagon {
+  position: absolute;
+  z-index: 2;
+  width: 510px;
+  height: 379.2px;
+  top: 272.64px;
+  left: -255.68px;
+  backdrop-filter: blur(1.9px);
+}
+
+.secondHexagon,
+.ellipse,
+.secondEllipse {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logoContainer {
+    padding-top: 5rem;
+  }
+
+  .logo {
+    width: 331px;
+    height: 40.7px;
+  }
+
+  .olympus {
+    left: 3rem;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: 3;
+  }
+
+  .cube {
+    top: 34px;
+    right: calc(25vw - 30px);
+    width: 269.33px;
+    height: 266.16px;
+    z-index: 2;
+  }
+
+  .hexagon {
+    width: 1075.32px;
+    height: 798.48px;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    top: 345px;
+    left: -513px;
+  }
+
+  .secondHexagon {
+    display: block;
+    position: absolute;
+    width: 331.62px;
+    height: 326.83px;
+    bottom: -135px;
+    left: 50vw;
+    rotate: -5deg;
+  }
+
+  .ellipse {
+    display: inline;
+    position: absolute;
+    width: 835.28px;
+    height: 1668px;
+    top: -1304px;
+    left: 50vw;
+    z-index: 1;
+  }
+
+  .secondEllipse {
+    display: inline;
+    position: absolute;
+    width: 835.28px;
+    height: 1668px;
+    top: 304px;
+    left: 12px;
+    z-index: 1;
+  }
+}
